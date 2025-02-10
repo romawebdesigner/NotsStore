@@ -1,405 +1,104 @@
-* {margin: 0;
+* {
+    margin: 0;
     padding: 0;
+    box-sizing: border-box;
 }
 
-.topo {
-    background-image: linear-gradient(to top left, #000000, #000000, #000000);
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-}
-
-@font-face {
-    font-family: "Poppins";
-    src: url("../fonts/Poppins-Light.ttf");
-}
-.logo {
-    padding: 0 5px;
-}
-.texto-topo {
-    padding: 0 10px;
-}
-.notebook {
-    padding: 0 5px;
-}
+/* Ajuste na navegação para telas menores */
 .container-navegacao {
     display: flex;
-    max-width: 1000px;
-    width: 100%;
+    flex-wrap: wrap;
     align-items: center;
     justify-content: space-between;
-    padding-top: 8px;
+    padding: 8px;
+    max-width: 1000px;
+    width: 100%;
 }
 
 .navegacao {
-    font-family: "Poppins", sans-serif;
-    width: 100%;
     display: flex;
     flex-wrap: wrap;
-    justify-content: space-around;
+    justify-content: center;
+    gap: 10px;
 }
 
 .navegacao a {
     text-decoration: none;
     color: white;
     font-size: 14px;
-    padding: 0 5px;
+    padding: 5px 10px;
 }
 
+/* Responsividade da seção de topo */
 .info-topo {
     display: flex;
-    align-items: center;
-    max-width: 1000px;
-    justify-content: center;
-    width: 100%;
-    justify-content: space-between;
-    padding: 60px 0;
-}
-
-.titulo {
-    color: white;
-    font-weight: bold;
-    font-family: Arial, Helvetica, sans-serif;
-    font-size: 50px;
-    margin-bottom: 20px;
-}
-
-.text {
-    font-family: "Poppins", sans-serif;
-    color: white;
-    font-size: 14px;
-    width: 425px;
-}
-
-.botao {
-    border: solid 1px white;
-    border-radius: 10px;
-    height: 40px;
-    width: 159px;
-    background-color: transparent;
-    font-family: "poppins", sans-serif;
-    color: white;
-    margin-top: 25px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    cursor: pointer;
-    text-decoration: none;
-}
-
-/* Descrição */
-.subtitulo {
-    display: flex;
-    justify-content: center;
     flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 60px 0 0;
-}
-
-
-.info-meio1 {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-}
-
-.tipo-desempenho {
-    display: flex;
-    width: 100%;
-    max-width: 1000px;
-}
-
-
-
-/* Linha abaixo da descrição */
-.underline {
-    width: 100px;
-    border: 1px solid #f56606;
-}
-
-/* Descrição de potencia */
-.descricao {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    font-size: 30px;
-}
-
-.text-descricao {
-    font-size: 20px;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    margin: 20px;
-    text-align: center;
-}
-
-/* Meio1 */
-.especificacao {
-    display: flex;
-    width: 100%;
-    max-width: 1000px;
-}
-
-.subtitulo {
-    display: flex;
-    justify-content: center;
-    flex-direction: column;
-    align-items: center;
-    width: 100%;
-    padding: 60px 0 0;
-}
-
-.underline {
-    width: 100px;
-    border: 1px solid #e7344c;
-}
-
-.works {
-    color: #000000;
-    font-family: "Poppins", sans-serif;
-    text-decoration: none;
-    font-size: 80px;
-}
-
-.text-especificacao {
-    font-size: 13px;
-    font-family: "Poppins", sans-serif;
-    color: black;
-    margin: 15px;
-    text-align: center;
-}
-
-.info-meio {
-    display: flex;
-    flex-direction: row;
-    flex-wrap: nowrap;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 40px 0;
-}
-
-.tipo-especificacao {
-    font-family: "Poppins", sans-serif;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    color: #000000;
-    padding-left: 20px;
-}
-
-.titulo-especificacao {
-    font-weight: bold;
-    font-size: 20px;
-    margin: 10px;
-    color: #000000;
-}
-
-.text-especificacao {
-    font-size: 15px;
-    text-align: center;
-}
-
-
-
-
-
-/* Meio segundo bloco */
-.info-meio2 {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    width: 100%;
-    padding: 50px 0;
-}
-
-.tampanot {
-    width: 100%;
-    max-width: 1000px;
-    display: flex;
-    justify-content: space-around;
-    padding: 1 10px;
-}
-
-.not {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-}
-
-.subtitulo2 {
-    font-family: "Poppins", sans-serif;
-    font-size: 30px;
-    margin-bottom: 35px;
-    color: #000000;
-}
-.texto-meio {
-    width: 100%;
-    padding: 0 10px;
-}
-.text-tampanot {
-    font-size: 15px;
-    font-family: "Poppins", sans-serif;
-    color: #000000;
-}
-
-.botao-apps {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    margin-top: 30px;
-}
-
-.botaoapp {
-    border: solid 1px #f56606;
-    border-radius: 10px;
-    width: 100%;
-    height: 55px;
-    max-width: 235px;
-    font-family: poppins, sans-serif;
-    font-size: 15px;
-    color: #f56606;
-    box-shadow: #d8d8d7 3px 3px 3px 1px;
-    margin: 10px;
-    cursor: pointer;
-    display: flex;
-    text-decoration: none;
-    justify-content: center;
     align-items: center;
     text-align: center;
+    padding: 40px 10px;
 }
 
-
-
-/* rodapé */
-.rodape {
-    width: 100%;
-    display: flex;
-    justify-content: space-around;
-    align-items: flex-end;
-}
-
-.texto-rodape {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    font-size: medium;
-    background-color: #000;
-    padding: 30px;
-    width: 100%;
-}
-
-.behance {
-    font-family: "Poppins", sans-serif;
-    text-align: center;
-    color: white;
-    font-weight: bold;
-    padding: 10px;
-}
-
-.rodapefinal{
-    font-family: "Poppins", sans-serif;
-    width: 80px;        
-    border: 1px solid #f56606;
-}
-
-
-
-
-/* Media Query */
-@media (max-width:900px){
-    
-    .info-topo{
-        justify-content: center;
-        height: 100%;
-        align-items: center;
-        margin:0;
-    }
-    .texto-topo {
-        padding: 0;
-        display: flex;
-        flex-direction: column;
-        align-items: center;
-    }
-    
-    .subtitulo2 {
-        text-align: center;
-    }
-    .navegacao a {
-        padding: 10px;
-    }
-    .botao-apps {
-        justify-content: center;
-    }
-    .titulo{
-        text-align: center;
-    }
-    .text{
-        text-align: center;
-    }
-    .text-especificacao{
-        text-align: center;
-    }
-}
-@media (max-width:760px){
+/* Ajustes para telas menores */
+@media (max-width: 900px) {
     .container-navegacao {
-        flex-wrap: wrap;        
-        justify-content: center;
-    }
-    .logo {
-        padding: 0 5px;
-        margin-bottom: 6px;
-    }
-    .services {
         flex-direction: column;
         align-items: center;
+        text-align: center;
     }
-    .tipo-servicos {
-        margin-bottom: 20px;
-        width: 100%;
-        max-width: 425px;
-        padding: 0;
-    }
-}
-@media(max-width:676px){
+
     .navegacao {
-        max-width: 100%;
-        justify-content: center;
-    }
-    .works{
-        font-size: 35px;
-    }
-}
-@media(max-width:462px){    
-    .info-topo {
-        max-width: 290px;       
-    }
-    .texto-topo {
-        padding: 0;
-        display: flex;
         flex-direction: column;
         align-items: center;
     }
+
     .titulo {
-        font-size: 32px;
+        font-size: 40px;
     }
+
     .text {
-        width: 280px;
-        margin: 15px 0;
-    }
-    .botao-apps {
-        flex-direction: column;        
         width: 100%;
     }
-    .botaoapp{
+
+    .notebook img {
+        max-width: 100%;
+        height: auto;
+    }
+}
+
+@media (max-width: 600px) {
+    .titulo {
+        font-size: 30px;
+    }
+
+    .text {
+        font-size: 14px;
+        padding: 0 10px;
+    }
+
+    .botao-apps {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .botaoapp {
         max-width: 100%;
     }
 }
-@media(max-width:436px){
-    .tipo-especificacao {
-        max-width: 275px;
+
+@media (max-width: 400px) {
+    .navegacao {
+        flex-direction: column;
+    }
+
+    .navegacao a {
+        font-size: 12px;
+    }
+
+    .titulo {
+        font-size: 28px;
+    }
+
+    .text {
+        font-size: 12px;
     }
 }
